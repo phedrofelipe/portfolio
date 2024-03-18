@@ -1,0 +1,25 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: 0;
+}
+
+html {
+    font-size: 62.5%; /*A cada 1rem será considerado 10px*/
+}
+
+html, body {
+    height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-size: 1.6rem;
+    /* background-color: #011933; */
+    background-color: #011328;
+
+}

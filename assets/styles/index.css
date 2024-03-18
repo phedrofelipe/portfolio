@@ -1,0 +1,171 @@
+/* IMPORTANDO AS FONTS */
+@font-face { /* IMPORTAÇÃO DE UMA FONTE BAIXADA DE FORMA LOCAL NA MÁQUINA */
+    font-family: 'Made Tommy';
+    src: url('../fonts/MADE\ TOMMY\ Medium_PERSONAL\ USE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap'); /* IMPORTAÇÃO DE UMA FONTE VIA GOOGLE FONTS */
+
+
+/* ESTILIZAÇÃO DO HEADER - CONTEÚDO: LOGO E MENU DE NAVEGAÇÃO */
+header {
+    height: 80px;
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+
+    /* border: solid 1px gray; */
+}
+
+header .logo {
+    /* height: 60px; */
+    border: none;
+}
+
+header .logo span {
+    font-family: 'Made Tommy';
+    font-size: 32px;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    color: #0ACEFF;
+}
+
+header nav.header_navegation ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-decoration: none;
+    list-style: none;
+}
+
+header nav.header_navegation a, header nav.header_navegation button {
+    position: relative;
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+    border: none;
+    background-color: transparent;
+}
+
+header nav.header_navegation a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    margin-bottom: -2px;
+    bottom: 0;
+    left: 0;
+    color: #0093B8;
+    background-color: #0093B8;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+header nav.header_navegation a:hover:before, header nav.header_navegation a:hover {
+    transition: 0.4s;
+    color: #0093B8;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+header nav.header_navegation ul li a, header nav.header_navegation ul button a {
+    color: #0ACEFF;
+}
+
+
+
+
+/* ESTILIZAÇÃO DO MAIN - CONTEÚDO: TÍTULO, TEXTO E IMAGEM DE DESTAQUE */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    /* border: solid 1px black; */
+}
+
+main .section_title {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    /* border: solid 1px gray; */
+}
+
+main .section_title h1 {
+    font-family: 'Made Tommy';
+    font-size: 42px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    text-decoration: none;
+    line-height: 1.25;
+    color: #ffffff;
+}
+
+main .section_title span {
+    font-family: "Archivo", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+    color: #ffffff;
+}
+
+main .section_title p {
+    color: #FFFFFF;
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+    text-align: justify;
+    line-height: 1.20;
+}
+
+main .section_title .social_media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    /* border: solid 1px black; */
+}
+
+
+main .section_title .social_media a img {
+    height: 35px;
+}
+
+main .section_featured_image img {
+    height: 480px;
+}
+
+
+/* ESTILIZAÇÃO DA SECTION SOBRE/ABOUT - CONTEÚDO: TÍTULO, IMAGEM DE DESTAQUE, TEXTO INFORMATIVO E BOTÃO DE BAIXAR CURRÍCULO */
+section.section_about {
+    display: flex;
+    flex-direction: column;
+
+    border: solid 1px gray;
+}
